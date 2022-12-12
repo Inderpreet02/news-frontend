@@ -17,7 +17,7 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path="/:term" element={<TermPage />}/>
         <Route path="/search/:category" element={<CategoryPage />}/>
-        <Route path="/test/:category" element={<Test />}/>
+        <Route path="/:source/:category" element={<Test />}/>
         <Route
           path="*"
           element={

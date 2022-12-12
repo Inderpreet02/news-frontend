@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
@@ -7,7 +7,6 @@ import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { red } from "@mui/material/colors";
-import cardData from "../apiDummyData.json";
 
 import "./Card.css";
 
@@ -22,8 +21,8 @@ export default function TestCard({ data }) {
   return (
     <div className="card__container">
       {data &&
-        data.map((item) => (
-          <Card className="card" sx={{ maxWidth: 345 }}>
+        data.map((item, i) => (
+          <Card className="card" key={i} sx={{ maxWidth: 345 }}>
             <CardHeader
               avatar={
                 <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -46,7 +45,7 @@ export default function TestCard({ data }) {
             />
             <CardContent>
               <Typography variant="h6">
-                <a href={item.redirectURL} target="_blank">
+                <a href={item.redirectURL} rel="noreferrer" target="_blank">
                   {item.name}
                 </a>
               </Typography>

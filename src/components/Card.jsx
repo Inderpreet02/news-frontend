@@ -7,7 +7,7 @@ import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
-import cardData from '../apiDummyData.json'
+
 
 import './Card.css'
 
@@ -19,15 +19,13 @@ import './Card.css'
 //date------>publishedAt date
 
 export default function RecipeReviewCard({data}) {
-
-
-  console.log(data);
+  // console.log(data);
   return (
     <div className="card__container">
       {
         data && data.map((item) => (
 
-        <Card className='card' sx={{ maxWidth: 345 }}>
+        <Card className='card' key={item.author} sx={{ maxWidth: 345 }}>
           <CardHeader
             avatar={
               <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">

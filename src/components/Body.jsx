@@ -41,7 +41,7 @@ function Body() {
         <div className="Left-Black">
           {data &&
             data.articles.map((item) => (
-              <div className="big-card1">
+              <div className="big-card1" key={item.author}>
                 <img className="cardimage" src={item.urlToImage} alt="" />
                 <div className="content">
                   <h3>{item.publishedAt}</h3>

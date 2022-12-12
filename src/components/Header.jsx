@@ -25,11 +25,9 @@ const Header = () => {
             </div>
 
             <div className="header__center">
-                <div className="header__secondary">Blog</div>
-                <div className="header__secondary">Article</div>
+                <Link to="/NDTV/latest" className="header__secondary link">NDTV</Link>
                 <Link to="/" className="header__main link">Pew News</Link>
-                <div className="header__secondary">News</div>
-                <div className="header__secondary">Podcast</div>
+                <Link to="/IndiaToday/india" className="header__secondary link">IndiaToday</Link>
             </div>
 
             <div className="header__right header__iconColor header__icon">
