@@ -20,6 +20,7 @@
     display: flex;
     align-items: center;
     transition: background-color .2s;
+    text-transform: capitalize;
 }
 
 .nav__item:hover{

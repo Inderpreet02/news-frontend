@@ -18,7 +18,7 @@ const Footer = () => {
 
                     {
                         articles && articles.map(article => (
-                            <li className="footer__link">{article}</li>
+                            <li className="footer__link" key={article}>{article}</li>
                         ))
                     }
                 </ul>
@@ -27,7 +27,7 @@ const Footer = () => {
 
                     {
                         podcasts && podcasts.map(podcast => (
-                            <li className="footer__link">{podcast}</li>
+                            <li className="footer__link" key={podcast}>{podcast}</li>
                         ))
                     }
                 </ul>
@@ -35,7 +35,7 @@ const Footer = () => {
                     <li className="footer__linkHead">Broadcasts</li>
                     {
                         broadcasts && broadcasts.map(broadcast => (
-                            <li className="footer__link">{broadcast}</li>
+                            <li className="footer__link" key={broadcast}>{broadcast}</li>
                         ))
                     }
                 </ul>
@@ -43,7 +43,7 @@ const Footer = () => {
                     <li className="footer__linkHead">Contact Us</li>
                     {
                         contactUs && contactUs.map(contact => (
-                            <li className="footer__link">{contact}</li>
+                            <li className="footer__link" key={contact}>{contact}</li>
 
                         ))
                     }

@@ -42,11 +42,11 @@ export const contactUs = [
 ]
 
 export const options = [
-    "business",
-    "entertainment",
-    "general",
-    "health",
+    "cities",
+    "india",
+    "latest",
+    "offbeat",
     "science",
-    "sports",
-    "technology"
+    "south",
+    "world-news"
 ]

@@ -1,16 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { options } from '../dummyData'
 import './Nav.css'
 
-function Nav() {
+function Nav({setSearch}) {
   return (
     <div className='nav'>
         <div className="nav__container">
           {
             options && options.map((option) => (
 
-              <Link to={`/search/${option}`} className="nav__item link">{option}</Link>
+              <div onClick={()=> setSearch(option)} key={option} className="nav__item link">{option}</div>
             ))
           }
         </div>
