@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
@@ -23,9 +23,9 @@ export default function RecipeReviewCard({data}) {
   return (
     <div className="card__container">
       {
-        data && data.map((item) => (
+        data && data.map((item, __i__) => (
 
-        <Card className='card' key={item.author} sx={{ maxWidth: 345 }}>
+        <Card className='card' key={__i__} sx={{ maxWidth: 345 }}>
           <CardHeader
             avatar={
               <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -48,7 +48,7 @@ export default function RecipeReviewCard({data}) {
           />
           <CardContent>
             <Typography variant='h6'>
-              <a href={item.url} target="_blank">
+              <a href={item.url} target="_blank" rel="noreferrer">
                 {item.title}
               </a>
             </Typography>

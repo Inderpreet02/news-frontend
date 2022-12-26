@@ -4,12 +4,10 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import { useParams } from "react-router-dom";
-import apiDummyData from "../apiDummyData.json";
 import axios from "axios";
 
 const CategoryPage = () => {
   const { category } = useParams();
-  const API_KEY = "970d448337af4526a32943339ad14ec1";
 
   //GET https://newsapi.org/v2/top-headlines/sources?category=businessapiKey=API_KEY
 
@@ -19,7 +17,7 @@ const CategoryPage = () => {
     const getData = async () => {
       try {
         const response = await axios.get(
-          `https://newsapi.org/v2/top-headlines?country=de&category=${category}&apiKey=${API_KEY}`
+          `https://newsapi.org/v2/top-headlines?country=de&category=${category}&apiKey=970d448337af4526a32943339ad14ec1`
         );
         setData(response.data.articles);
       } catch (error) {
