@@ -17,7 +17,7 @@ const Test = () => {
     const getData = async () => {
       try {
         const response = await axios.get(
-          API_URL + source + `?category=${category}`
+          API_URL + "NDTV" + `?category=${category}`
         );
         // console.log(response.data.news);
         setData(response.data.news);
@@ -33,7 +33,6 @@ const Test = () => {
   return (
     <>
       <Header />
-      <Nav />
       <h1 style={{margin: "40px", color: "#fff", textTransform: "uppercase"}} className="test__heading">{category} News from {source}</h1>
       <TestCard data={data} />
       <Footer />

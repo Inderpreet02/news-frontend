@@ -1,5 +1,5 @@
 .hero {
-  /* height: 70vh; */
+  height: 70vh;
   width: 100%;
   background-color: var(--mainBackground);
   padding: 20px;
@@ -137,6 +137,10 @@
     justify-content: space-between;
     width: 100%;
     /* height: max-content; */
+  }
+
+  .hero{
+    height: auto;
   }
 
   .hero__heading{
