@@ -28,8 +28,8 @@ const Home = () => {
   return (
     <>
       <Header />
-      <Nav setSearch={setSearch}/>
       <Hero />
+      <Nav setSearch={setSearch}/>
       <Main data={data} search={search}/>
       {/* <RecipeReviewCard/> */}
       <Footer />

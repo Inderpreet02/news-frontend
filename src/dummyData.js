@@ -42,9 +42,9 @@ export const contactUs = [
 ]
 
 export const options = [
+    "latest",
     "cities",
     "india",
-    "latest",
     "offbeat",
     "science",
     "south",

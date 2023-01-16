@@ -71,7 +71,7 @@ const Hero = () => {
                 </div>
               ))}
             </div>
-            <div className="hero__topCards">
+            <div className="hero__topCards card__hidden">
               {contentB.map((item, __i__) => (
                 <div key={__i__} className="hero__topCard card__pT">
                   <div

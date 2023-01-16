@@ -13,6 +13,15 @@ function Nav({setSearch}) {
             ))
           }
         </div>
+
+        <select className="nav__containerResponsive" onChange={(e) => setSearch(e.target.value)} >
+
+          {
+            options && options.map((op) => (
+              <option className='nav__containerResponsiveOption' value={op}>{op}</option>
+            ))
+          }
+        </select>
     </div>
   )
 }

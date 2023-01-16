@@ -96,3 +96,21 @@
 .header__secondary{
     padding: 0px 40px;
 }
+
+@media screen and (max-width: 980px){
+    .header__left, .header__right {
+        display: none;
+    }
+    
+    .header__container{
+        margin: 0;
+    }
+
+    .header__center{
+        flex: 1;
+    }
+
+    .header__main{
+        font-size: 30px;
+    }
+}

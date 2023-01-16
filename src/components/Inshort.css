@@ -64,3 +64,23 @@
   right: 0px;
   font-size: 12px;
 }
+
+
+@media screen and (max-width: 800px) {
+  .short__title{
+    font-size: 20px;
+  }
+
+  .short__container{
+    flex-direction: column;
+  }
+
+  .short__content{
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .short{
+    height: auto;
+  }
+}
